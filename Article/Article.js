@@ -127,4 +127,31 @@ article.classList.add('article');
 theDate.classList.add('date');
 button.classList.add('expandButton');
 
+theTitle.textContent = title;
+theDate.textContent = date;
+firstPara.textContent = firstParagraph;
+secondPara.textContent = secondParagraph;
+thirdPara.textContent = thirdParagraph;
+button.textContent = 'expand';
+
+const open = '\u25bc';
+const close = '\u25b2';
+
+button.addEventListener('click', () => {
+  article.classList.toggle('article-open')
+})
+
+article.appendChild(theTitle);
+article.appendChild(theDate);
+article.appendChild(firstPara);
+article.appendChild(secondPara);
+article.appendChild(thirdPara);
+article.appendChild(button);
+return article;
+
 }
+
+data.forEach((item) => {
+  let article = componentCreator(item);
+  document.querySelector('.articles').append(componentCreator(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph));
+})
