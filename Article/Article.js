@@ -123,4 +123,8 @@ const firstPara = document.createElement('p');
 const secondPara = document.createElement('p');
 const thirdPara = document.createElement('p');
 
+article.classList.add('article');
+theDate.classList.add('date');
+button.classList.add('expandButton');
+
 }
