@@ -119,4 +119,8 @@ const theTitle = document.createElement('h2');
 const theDate = document.createElement('p');
 const button = document.createElement('span');
 
+const firstPara = document.createElement('p');
+const secondPara = document.createElement('p');
+const thirdPara = document.createElement('p');
+
 }
