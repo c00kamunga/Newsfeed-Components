@@ -114,6 +114,9 @@ const data = [
 */
 
 function componentCreator(title, date, firstParagraph, secondParagraph, thirdParagraph){
+const article = document.createElement('div');
+const theTitle = document.createElement('h2');
+const theDate = document.createElement('p');
+const button = document.createElement('span');
 
-  
 }
