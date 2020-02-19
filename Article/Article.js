@@ -113,43 +113,53 @@ const data = [
 
 */
 
+
 function componentCreator(title, date, firstParagraph, secondParagraph, thirdParagraph){
 const article = document.createElement('div');
 const theTitle = document.createElement('h2');
 const theDate = document.createElement('p');
 const button = document.createElement('span');
 
-const firstPara = document.createElement('p');
-const secondPara = document.createElement('p');
-const thirdPara = document.createElement('p');
+const firstpara = document.createElement('p');
+const secondpara = document.createElement('p');
+const thirdpara = document.createElement('p');
 
 article.classList.add('article');
 theDate.classList.add('date');
 button.classList.add('expandButton');
 
+
 theTitle.textContent = title;
 theDate.textContent = date;
-firstPara.textContent = firstParagraph;
-secondPara.textContent = secondParagraph;
-thirdPara.textContent = thirdParagraph;
+firstpara.textContent = firstParagraph;
+secondpara.textContent = secondParagraph;
+thirdpara.textContent = thirdParagraph;
 button.textContent = 'expand';
+
 
 const open = '\u25bc';
 const close = '\u25b2';
 
+
+
+
 button.addEventListener('click', () => {
-  article.classList.toggle('article-open')
+article.classList.toggle('article-open')
 })
+
+
 
 article.appendChild(theTitle);
 article.appendChild(theDate);
-article.appendChild(firstPara);
-article.appendChild(secondPara);
-article.appendChild(thirdPara);
+article.appendChild(firstpara);
+article.appendChild(secondpara);
+article.appendChild(thirdpara);
 article.appendChild(button);
 return article;
 
 }
+
+
 
 data.forEach((item) => {
   let article = componentCreator(item);
