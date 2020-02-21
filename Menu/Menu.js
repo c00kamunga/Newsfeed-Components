@@ -36,6 +36,7 @@ let menuItems = [
 const dropMenu = (menuArray) => {
   const menu = document.createElement('div');
   menu.classList.add('menu');
+  
 
   const theUl = document.createElement('ul');
   menu.appendChild(theUl);
@@ -55,4 +56,4 @@ const dropMenu = (menuArray) => {
 }
 
 const head = document.querySelector('.header');
-head.appendChild(dropMenu)
+head.appendChild(dropMenu(menuItems))
