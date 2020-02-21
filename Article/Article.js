@@ -137,11 +137,6 @@ thirdpara.textContent = thirdParagraph;
 button.textContent = 'expand';
 
 
-const open = '\u25bc';
-const close = '\u25b2';
-
-
-
 
 button.addEventListener('click', () => {
 article.classList.toggle('article-open')
